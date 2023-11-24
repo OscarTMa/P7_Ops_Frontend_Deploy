@@ -1,20 +1,16 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
 name: CI/CD DS_P7_API
 
-# Define cuándo se ejecutará el flujo de trabajo
 on:
   workflow_dispatch:
-  
-  # Se activa cuando hay una solicitud de ejecución del flujo de trabajo (manualmente o mediante un evento de push)
   push:
     branches: [main, master]
 
-# Define uno o más trabajos que se ejecutarán en paralelo o secuencialmente
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
       - name: Set up Python 3.8.10
         uses: actions/setup-python@v4
         with:
@@ -24,4 +20,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Test with pytest
-     
+        run: pytest
