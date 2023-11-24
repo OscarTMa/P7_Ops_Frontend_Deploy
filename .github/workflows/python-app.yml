@@ -15,13 +15,18 @@ jobs:
       - name: Show directory structure
         run: ls -R /home/runner/work/P7_Ops_Frontend_Deploy
 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8.10
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Rename pytest.init to pytest.ini
-        run: mv /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/pytest.init /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/pytest.ini
+      - name: Install pytest
+        run: pip install pytest
 
       - name: Run pytest
         run: pytest tests/test_app.py
