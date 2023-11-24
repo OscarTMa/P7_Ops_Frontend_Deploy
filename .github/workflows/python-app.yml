@@ -23,5 +23,5 @@ jobs:
         run: python -m pip install pytest
 
       - name: Run pytest
-        working-directory: /home/runner/work/P7_Ops_Frontend_Deploy/
+        working-directory: /home/runner/work/P7_Ops_Frontend_Deploy/tests
         run: pytest tests
