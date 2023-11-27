@@ -22,7 +22,7 @@ jobs:
           pip install streamlit
  
       - name: Run Streamlit app
-        run: streamlit run /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/app.py 
+        run: streamlit run /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/app.py
         
       #- name: Run Streamlit app
       # run:  /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/Procfile
