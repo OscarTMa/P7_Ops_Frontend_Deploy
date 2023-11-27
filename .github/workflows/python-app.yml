@@ -13,8 +13,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Show directory structure
-        run: ls -R /home/runner/work/P7_Ops_Frontend_Deploy
-
+        #run: ls -R /home/runner/work/P7_Ops_Frontend_Deploy
+        run: ls -R /home/runner/.local/lib/python3.10/site-packages/toml
+        
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
