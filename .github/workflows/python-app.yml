@@ -25,4 +25,4 @@ jobs:
         #run: streamlit run /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/app.py 
         #[ARGUMENTS]
         #run: sh setup.sh && streamlit run  /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/app.py
-        #run: run /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/Procfile
+        run: run /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/Procfile
