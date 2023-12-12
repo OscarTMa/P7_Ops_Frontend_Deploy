@@ -27,11 +27,15 @@ jobs:
       #    python -m pip install --upgrade pip
       #    pip install -r requirements.txt
 
-      - name: Show directory .streamlit
-        run: ls -l /home/runner/.local/lib/python3.10/site-packages/toml
+      - name: Show directory structure
+        run: ls -lA /home/runner/
+      #  este es el directorio:  run: ls -l /home/runner/.local/lib/python3.10/site-packages/toml  
+     
+      #  run: ls -lAR /home/runner/work/P7_Ops_Frontend_Deploy
+       
 
-      - name: Buscar y borrar config.toml
-        run: find / -name "config.toml" -exec rm -f {} \;  
+      #- name: Buscar y borrar config.toml
+      #  run: find / -name "config.toml" -exec rm -f {} \;  
 
       - name: Show directory .streamlit
         run: rm ~/.streamlit/config.toml
