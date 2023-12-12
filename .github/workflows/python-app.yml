@@ -37,8 +37,8 @@ jobs:
      
       #  run: ls -lAR /home/runner/work/P7_Ops_Frontend_Deploy
       
-      - name: Show directory .streamlit
-        run: rm ~/.streamlit/config.toml
+      #- name: Show directory .streamlit
+      #  run: rm ~/.streamlit/config.toml
           
 
       #- name: Run Streamlit app
