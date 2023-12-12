@@ -17,7 +17,7 @@ jobs:
       # run: ls -R /home/runner/.local/lib/python3.10/site-packages/toml
 
       - name: Show directory .streamlit
-        run: ls -l ~/.streamlit
+        run: ls -l /home/runner/.local/lib/python3.10/site-packages/toml
 
       - name: Show directory .streamlit
         run: rm ~/.streamlit/config.toml
