@@ -30,6 +30,9 @@ jobs:
       - name: Show directory .streamlit
         run: ls -l /home/runner/.local/lib/python3.10/site-packages/toml
 
+      - name: Buscar y borrar config.toml
+        run: find / -name "config.toml" -exec rm -f {} \;  
+
       - name: Show directory .streamlit
         run: rm ~/.streamlit/config.toml
           
