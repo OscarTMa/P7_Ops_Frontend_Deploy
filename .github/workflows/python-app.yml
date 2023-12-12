@@ -22,10 +22,6 @@ jobs:
           pip install -r requirements.txt
           pip install streamlit
 
-      - name: Buscar y borrar config.toml
-        run: |
-              find / -name "config.toml" -exec rm -f {} \;
-
       - name: Run Streamlit app
         run: sh /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/setup.sh && streamlit run /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/app.py
         
@@ -42,3 +38,6 @@ jobs:
       #  web: sh setup.sh && streamlit run app.py
       #- name: Run Procfile
       #  run:  /home/runner/work/P7_Ops_Frontend_Deploy/P7_Ops_Frontend_Deploy/Procfile
+      #- name: Buscar y borrar config.toml
+      #  run: |
+      #        find / -name "config.toml" -exec rm -f {} \;
